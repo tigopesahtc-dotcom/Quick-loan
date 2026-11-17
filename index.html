@@ -3,52 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QuickLoans - Advanced Loan</title>
+<title>QuickLoans - Cameroon</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#C80000;color:white;text-align:center}
-.header{padding:30px 20px}
-h1{font-size:36px;color:#FFCC00;margin:0}
-p{font-size:17px}
-.box{background:white;color:#333;margin:15px;border-radius:15px;padding:20px;text-align:left}
-table{width:100%;border-collapse:collapse;margin-top:10px}
-th{background:#FFCC00;color:#900;padding:10px}
-td{padding:10px;border-bottom:1px solid #ddd;text-align:center}
-.btn{display:block;background:#FFCC00;color:#900;font-weight:bold;font-size:20px;padding:15px;border-radius:10px;text-decoration:none;margin:15px}
-.btn2{display:block;background:white;color:#C80000;font-weight:bold;font-size:18px;padding:12px;border-radius:10px;text-decoration:none;margin:15px;border:2px solid white}
-.footer{font-size:13px;padding:15px;opacity:0.8}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
+body{background:#f2f2f2}
+.top{background:#003A7A;color:white;text-align:center;padding:14px 10px 10px}
+.top h1{font-size:28px;line-height:1}
+.top p{font-size:14px;opacity:.9}
+.badge{display:inline-block;background:#FFF3CD;color:#003A7A;padding:4px 14px;border-radius:20px;font-weight:bold;margin-top:6px;font-size:14px}
+.wrap{max-width:480px;margin:20px auto;padding:0 12px}
+.card{background:white;border-radius:16px;padding:22px;box-shadow:0 4px 20px rgba(0,0,0,.08);text-align:center}
+.card h2{color:#0A2540;font-size:26px}
+.card .sub{color:#777;margin:8px 0 20px;font-size:15px}
+.calc{background:#F6F6F6;border-radius:12px;padding:18px;text-align:left}
+.calc h3{color:#0A2540;font-size:19px;margin-bottom:14px}
+.row{display:flex;justify-content:space-between;font-size:16px;color:#333;margin:6px 0}
+.row b{color:#FFC700}
+.hint{text-align:center;margin:14px 0 8px}
+.hint span{background:#FFF3CD;color:#003A7A;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:14px}
+input[type=range]{-webkit-appearance:none;width:100%;height:10px;border-radius:10px;background:linear-gradient(to right,#00C853,#FFEB00,#FF9800,#FF1744);outline:none;margin:14px 0 6px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:#FFC700;border:3px solid white;box-shadow:0 0 0 2px #ddd;cursor:pointer}
+.labels{display:flex;justify-content:space-between;color:#888;font-size:13px}
+.pay{background:white;border-radius:10px;padding:16px 14px;display:flex;justify-content:space-between;align-items:center;margin-top:16px}
+.pay span{color:#888}
+.pay b{color:#FFC700;font-size:26px}
+.term-row{display:flex;gap:8px;margin-top:12px}
+.term-row button{flex:1;padding:10px;border:1px solid #ddd;background:white;border-radius:8px;font-weight:bold;cursor:pointer}
+.term-row button.active{background:#003A7A;color:white;border-color:#003A7A}
+.btn{display:block;width:100%;background:#003A7A;color:white;border:none;padding:16px;border-radius:10px;font-size:17px;font-weight:bold;letter-spacing:1px;margin-top:18px;cursor:pointer}
+.form{display:none;background:white;border-radius:16px;padding:20px;margin-top:16px;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.form h3{color:#0A2540;text-align:center;margin-bottom:14px}
+.form input,.form select{width:100%;padding:13px;border:1px solid #ddd;border-radius:10px;margin-bottom:12px;font-size:15px}
+.form .success{background:#E8F5E9;color:#2E7D32;padding:12px;border-radius:10px;text-align:center;display:none;margin-top:10px}
+.small{font-size:12px;color:#888;text-align:center;margin-top:12px}
 </style>
 </head>
 <body>
-
-<div class="header">
+<div class="top">
 <h1>QuickLoans</h1>
-<h1>Advanced Loan</h1>
-<p>Get the cash you need, when you need it most.</p>
-<p><b>Interest Rate: 5% Only</b></p>
+<p>from Cameroon</p>
+<div class="badge">🇨🇲 Cameroon</div>
 </div>
 
-<div class="box">
-<h3>Choose The Package That Suits You</h3>
-<table>
-<tr><th>PACKAGE</th><th>LOAN (XAF)</th><th>TOTAL TO REPAY</th></tr>
-<tr><td>1</td><td>750 000</td><td>787 500</td></tr>
-<tr><td>2</td><td>1 000 000</td><td>1 050 000</td></tr>
-<tr><td>3</td><td>2 000 000</td><td>2 100 000</td></tr>
-<tr><td>4</td><td>3 000 000</td><td>3 150 000</td></tr>
-<tr><td>5</td><td>4 000 000</td><td>4 200 000</td></tr>
-<tr><td>6</td><td>5 000 000</td><td>5 250 000</td></tr>
-</table>
-<p>✓ Instant cash on your phone<br>
-✓ Affordable interest rate (5%)<br>
-✓ Flexible repayment<br>
-✓ Available 24/7</p>
+<div class="wrap">
+<div class="card">
+<h2>Welcome to QuickLoans 🇨🇲</h2>
+<p class="sub">Get loans easily through QuickLoans in Cameroon</p>
 
-<!-- CHANGE THE NUMBER BELOW TO YOUR NUMBER -->
-<a class="btn" href="tel:+237600000000">📞 CALL TO APPLY NOW</a>
-<a class="btn2" href="tel:*126%23">Dial *126#</a>
+<div class="calc">
+<h3>Loan Calculator</h3>
+<div class="row"><span>Amount</span><b id="amtLabel">XAF 1,000,000</b></div>
+<div class="row"><span>Term</span><b id="termLabel">48 Months</b></div>
+<div class="hint"><span>Slide to adjust loan amount</span></div>
+<input type="range" id="slider" min="50000" max="5000000" step="50000" value="1000000">
+<div class="labels"><span>XAF 50,000</span><span>XAF 5,000,000</span></div>
+
+<div class="term-row">
+<button onclick="setTerm(12,this)">12 Mo</button>
+<button onclick="setTerm(24,this)">24 Mo</button>
+<button onclick="setTerm(48,this)" class="active">48 Mo</button>
 </div>
 
-<div class="footer">Terms and conditions apply.<br>QuickLoans - We're Good Together.</div>
+<div class="pay"><span>Monthly Payment</span><b id="monthly">XAF 20,834</b></div>
+</div>
 
+<button class="btn" onclick="document.getElementById('form').style.display='block';window.scrollTo({top:600,behavior:'smooth'})">START APPLICATION</button>
+</div>
+
+<div class="form" id="form">
+<h3>Start Your Application</h3>
+<input type="text" placeholder="Full Name" required>
+<input type="tel" placeholder="Phone Number e.g. 690 00 00 00" required>
+<select><option>Choose Loan Amount</option><option>XAF 50,000 - 500,000</option><option>XAF 500,000 - 1,000,000</option><option>XAF 1,000,000 - 5,000,000</option></select>
+<input type="text" placeholder="ID / CNI Number">
+<button class="btn" onclick="document.getElementById('ok').style.display='block'">SUBMIT APPLICATION</button>
+<div class="success" id="ok">✅ Application received! We will call you soon on WhatsApp.</div>
+<p class="small">Your information is safe & secure</p>
+</div>
+</div>
+
+<script>
+let term=48;
+function fmt(n){return 'XAF '+n.toLocaleString('en-US')}
+function update(){
+let amt=parseInt(document.getElementById('slider').value);
+document.getElementById('amtLabel').textContent=fmt(amt);
+document.getElementById('termLabel').textContent=term+' Months';
+let monthly=Math.round(amt/term);
+document.getElementById('monthly').textContent=fmt(monthly);
+}
+document.getElementById('slider').addEventListener('input',update);
+function setTerm(t,el){term=t;document.querySelectorAll('.term-row button').forEach(b=>b.classList.remove('active'));el.classList.add('active');update()}
+update();
+</script>
 </body>
 </html>
